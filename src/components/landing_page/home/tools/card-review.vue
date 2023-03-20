@@ -1,5 +1,5 @@
 <template>
-    <v-card class="pa-5 overflow-hiden" width="400"  height="420" >
+    <v-card class="pa-5 overflow-hiden primary" width="400"  height="420" >
 
         <div class="d-flex flex-column justify-center align-center ">
 

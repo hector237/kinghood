@@ -3,26 +3,31 @@
     <v-parallax
         dark
         src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+        
+        
       >
         <v-row
-          align="center"
-          justify="center"
+          class="d-flex justify-center align-center "
         >
           <v-col
-            class="text-center"
-            cols="8"
+            class="text-center d-flex flex-column justify-center align-center"
+            cols="12"
           >
-            <v-avatar color="blue" circle></v-avatar>
-            <h1 class="text-h4 font-weight-thin mb-4">
+            <v-avatar color="red" size="128" circle class="d-none d-md-flex "></v-avatar>
+            <h1 class=" text-h3 text-md-h2  my-4 ">
               CLEANING EXCELLENCE GUARANTEED!
             </h1>
-            <h4 class="subheading">
+            <h4 class="text-h6 text-md-h5 ">
               An uncleaned exhaust hood, with its built up grease, 
               increases the risk for a fire. What is more important than the safety and security of your employees, customers and all those we love and care about?
             </h4>
+            <div class="d-flex justify-center align-center mt-5">
+            <v-btn x-large color="secondary" elevation="5">Hire Us!</v-btn>
+          </div>
           </v-col>
         </v-row>
       </v-parallax>
+
   
 </template>
 

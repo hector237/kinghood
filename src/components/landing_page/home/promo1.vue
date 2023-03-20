@@ -1,5 +1,5 @@
 <template>
-<div class="    grey">
+<div class="primary">
     <div class="d-flex flex-row  flex-md-row  flex-column-reverse  ">
         <div class="text-h3 d-flex justify-center align-center flex-column text-center mt-5 ml-lg-16 ml-xl-0 pa-lg-10">
             Don’t Gamble with Dirt You Can’t Handle.
@@ -16,6 +16,9 @@
                 We believe in providing quality service to all our customers. Being the first in the industry
                 to provide “before” and “after” pictures of the services provided by us,
                 we are known and trusted for the quality of our top kitchen exhaust hood cleaning services in Jacksonville Metro area.
+            </div>
+            <div class="d-flex  align-center mb-10 mt-5">
+                <v-btn x-large text color="surface" black>Learn more...</v-btn>
             </div>
         </div>
 
@@ -66,19 +69,20 @@ export default {
         width: 100%;
     }
 }
+
 @media(min-width: 1264px) {
 
-        .circle {
-            width: 90%;
-            height: 70%;
-        }
+    .circle {
+        width: 90%;
+        height: 53%;
     }
+}
+
 @media(min-width: 1904px) {
 
-        .circle {
-            width: 50%;
-            height: 0;
-        }
+    .circle {
+        width: 50%;
+        height: 0;
     }
-
+}
 </style>

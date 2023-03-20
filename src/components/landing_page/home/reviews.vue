@@ -1,9 +1,9 @@
 <template>
-    <v-container class="pa-10">
+    <v-container class="pa-10 background">
 
 
         <v-row class="d-flex justify-center mb-10 ">
-            <div class="text-h3 text-center">OUR SATISFIED CLIENTS</div>
+            <div class="text-h2 text-center">OUR SATISFIED CLIENTS</div>
         </v-row>
         <div class="pb-10">
             <carousel-3d

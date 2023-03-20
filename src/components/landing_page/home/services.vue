@@ -1,9 +1,9 @@
 <template>
 
-    <v-container fluid class="d-flex flex-column pa-16">
+    <v-container fluid class="d-flex flex-column pa-16 " >
 
         <v-row class="justify-center align-center mb-10">
-            <div class="text-h2">Services</div>
+            <div class="text-h2 text-font-text">Services</div>
         </v-row>
         <v-row class="flex-row justify-space-around">
             <div v-for="i in 4" :key="i">
