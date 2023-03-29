@@ -1,5 +1,5 @@
 <template>
-  <div class=" ">
+  <div class="dark ">
          <v-img
          cover
          height="400"
@@ -19,10 +19,10 @@
                         Taking cleaning to another level.
                         
                     </div>
-                    <div style="max-widht: 50%" class="ml-16 mt-5">
+                    <div style="max-widht: 50%" class="mt-5">
                         
                         
-                        <v-btn color="secondary">Hire us today</v-btn>
+                        <v-btn color="secondary" @click="goToHire">Hire us today</v-btn>
                         
                     </div>
                 </div>
@@ -42,7 +42,12 @@ export default {
             return {
                 background_url: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
             }
+    },
+    methods: {
+             goToHire() {
+            this.$router.push('/hire-us')
         },
+        }
 }
 </script>
 

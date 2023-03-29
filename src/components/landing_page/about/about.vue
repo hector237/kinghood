@@ -1,11 +1,11 @@
 <template>
   <div class="background">
     
-        <div class="d-flex flex-column flex-md-row ">
+        <div class="d-flex flex-column flex-sm-row ">
             <div class=" d-flex justify-center align-center flex-column mt-10 ml-lg-16 ml-xl-0 pa-lg-10">
                 
                 
-                <div class="text-h6 d-flex justify-center align-center ml-lg-10   justify-xl-end ml-xl-16 pl-xl-16  my-5 mx-8">
+                <div class="text-h6 text-left d-flex justify-center align-center ml-lg-10   justify-xl-end ml-xl-16 pl-xl-16  my-5 mx-8">
                     We are a kitchen hood cleaning company with immense experience in the industry.
                     are a family owned business
                     that was started in 2022 with lead technicians
@@ -23,7 +23,7 @@
                 </div>
             </div>
             
-            <div class="d-flex justify-center align-center justify-lg-start mb-10 my-lg-5 mr-10 ">
+            <div class="d-flex justify-center align-center justify-sm-start align-sm-start align-md-center ml-5 my-16 mb-10 my-lg-5 mr-10 ">
                 
                 <div class="  ">
                     <v-img
@@ -52,17 +52,28 @@ export default {
             background_url: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
         }
     },
+    props: {
+        info: Object,
+        image: Object,
+    },
 
 }
+/***
+ * valores a recibir
+ * data{
+ *      Name,
+ *      Description
+ *      Button},
+ * image{
+ *      url,
+ *      width,
+ *      height,
+ *      max-width,
+ *      max-height} 
+ * **/
 </script>
 
 <style>
 
-
-
-
-@media screen {
-    
-}
-
 </style>
+

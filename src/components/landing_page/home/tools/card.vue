@@ -1,50 +1,37 @@
 <template>
-    <v-card
-        class="mx-auto secondary"
-        max-width="300"
-        elevation="10"
-      >
-        <v-img
-          class="white--text align-end"
-          height="200px"
-          src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-        >
-          <v-card-title class="text-h5">Kitchen Hood Cleaning</v-card-title>
-        </v-img>
+<v-hover v-slot="{ hover }" @click="goToService">
+    <v-card class="mx-auto background" max-width="300" :elevation="hover ? 12 : 0"  @click="goToService">
 
-       
+        <div class="pa-5">
 
+            <v-img contain max-width="300px" max-height="200px" :src="image.url" class="pt-5">
+
+            </v-img>
+        </div>
         <v-card-text class="text--primary">
-          
-
-          <div class="text-body-1">Are you due for an exhaust hood cleaning? We can solve it for you</div>
-          
+            <v-card-title class="text-h6 text-md-h5">Kitchen Hood Cleaning</v-card-title>
+            <div class="text-body-1">Are you due for an exhaust hood cleaning? We can solve it for you</div>
 
         </v-card-text>
 
-        <v-card-actions>
-          <v-btn
-            large
-            color="surface"
-            text
-          >
-            Learn more
-          </v-btn>
-
-          <v-btn
-          large
-            color="surface"
-            text
-          >
-            Hire us
-          </v-btn>
-        </v-card-actions>
-      </v-card>
+    </v-card>
+</v-hover>
 </template>
 
 <script>
 export default {
-
+    data() {
+        return {
+            image: {
+                url: require('@/assets/img/kitchen-hood.png')
+            }
+        }
+    },
+    methods: {
+         goToService() {
+            this.$router.push('/services')
+        },
+    },
 }
 </script>
 

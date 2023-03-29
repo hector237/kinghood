@@ -4,7 +4,7 @@
         <div class="text-h3 d-flex justify-center align-center flex-column text-center mt-5 ml-lg-16 ml-xl-0 pa-lg-10">
             Don’t Gamble with Dirt You Can’t Handle.
 
-            <div class="text-h6 d-flex justify-center align-center ml-lg-10   justify-xl-end ml-xl-16 pl-xl-16 text-center my-5 mx-8">
+            <div class="text-h6 d-flex   ml-lg-10   justify-xl-end ml-xl-16 pl-xl-16 text-left my-5 mx-8">
                 We are a kitchen hood cleaning company with immense experience in the industry.
                 are a family owned business
                 that was started in 2022 with lead technicians
@@ -18,7 +18,7 @@
                 we are known and trusted for the quality of our top kitchen exhaust hood cleaning services in Jacksonville Metro area.
             </div>
             <div class="d-flex  align-center mb-10 mt-5">
-                <v-btn x-large text color="surface" black>Learn more...</v-btn>
+                <v-btn x-large text color="surface" black @click="goToAbout">Learn more...</v-btn>
             </div>
         </div>
 
@@ -35,6 +35,12 @@
 
 <script>
 export default {
+
+    methods: {
+         goToAbout() {
+            this.$router.push('/about')
+        },
+    },
 
 }
 </script>

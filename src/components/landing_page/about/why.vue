@@ -5,7 +5,7 @@
             Why Choose Us
         </div>
 
-        <div class="d-flex justify-space-around mx-16  mt-16">
+        <div class="d-flex flex-column flex-sm-row justify-space-around mx-16  mt-16">
             <div >
             
                 <div class="d-flex flex-column justify-center align-center mb-16" >
@@ -29,7 +29,7 @@
                     </div>
                 
             </div>
-            <div class="d-flex align-center"> 
+            <div class="d-none d-sm-flex align-center"> 
                 
                 <v-avatar size="128" color="blue"></v-avatar>
                 

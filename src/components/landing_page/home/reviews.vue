@@ -3,7 +3,9 @@
 
 
         <v-row class="d-flex justify-center mb-10 ">
-            <div class="text-h2 text-center">OUR SATISFIED CLIENTS</div>
+            <div class="text-h2 text-center">OUR SATISFIED CLIENTS
+                <v-divider class="align-start surface my-5 mx-10" inset></v-divider>
+            </div>
         </v-row>
         <div class="pb-10">
             <carousel-3d
@@ -15,7 +17,8 @@
             :width="carousel.width"
             :height="carousel.height"
             :display="carousel.display"
-            :autoplay="carousel.autoplay">
+            :autoplay="carousel.autoplay"
+            :controlsVisible="carousel.controlsVisible">
                 <slide v-for="(slide, i) in slides" :key="slide" :index="i">
                 <card></card>
                 </slide>
@@ -35,7 +38,7 @@ export default {
             slides: 7,
             carousel: {
                 autoplay: true,
-                autoplayTimeout: 1000,
+                autoplayTimeout: 100,
                 autoplayHoverPause: false,
                 count: 0,
                 perspective: 35,
@@ -51,6 +54,7 @@ export default {
                 startIndex: 0,
                 clickable: true,
                 minSwipeDistance: 10,
+                controlsVisible: true,
 
             }
         }
