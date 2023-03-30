@@ -23,6 +23,8 @@ export default {
             background_url: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
         }
     },
+
+    
 }
 
 
